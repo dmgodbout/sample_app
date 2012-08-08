@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120805211355) do
+ActiveRecord::Schema.define(:version => 20120806171002) do
+
+  create_table "links", :force => true do |t|
+    t.string   "in_url"
+    t.text     "out_url"
+    t.integer  "http_status"
+    t.integer  "user_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
