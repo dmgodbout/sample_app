@@ -1,7 +1,7 @@
 <%= form_for(@link) do |f| %>
   <div class="field">
-    <%= f.text_area :in_url,  placeholder: "Enter your destination" %>
-    <%= f.text_area :out_url,  placeholder: "Brand with lvh.me/(your input)  " %>
+    <%= f.text_area :out_url,  placeholder: "Enter your final destination" %>
+    <%= f.text_area :in_url,  placeholder: "(lvh.me)/(your_input)" %>
   </div>
-  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+  <%= f.submit "Brand your URL", class: "btn btn-large btn-primary" %>
 <% end %>

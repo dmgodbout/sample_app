@@ -28,7 +28,7 @@ class LinksController < ApplicationController
   private
 
     def correct_user
-      @link = current_user.microposts.find_by_id(params[:id])
+      @link = current_user.links.find_by_id(params[:id])
       redirect_to root_path if @link.nil?
     end
 end
